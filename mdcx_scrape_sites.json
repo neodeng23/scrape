@@ -1,0 +1,1740 @@
+{
+  "generated_at_utc": "2026-03-29T02:34:26+00:00",
+  "repo_root": "D:\\tools\\mdcx",
+  "format_version": 1,
+  "crawler_sites": [
+    {
+      "website": "7mmtv",
+      "enum_name": "MMTV",
+      "module_name": "mmtv",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\mmtv.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\mmtv.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://www.7mmtv.sx"
+      ],
+      "domains": [
+        "https://7mm002.com",
+        "https://7mmtv.tv",
+        "https://www.7mmtv.sx"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://7mm002.com/zh/amateur_content/107108/content.html",
+          "https://7mmtv.tv",
+          "https://www.7mmtv.sx"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "&search_type=searchall&op=search",
+          "/zh/searchform_search/all/index.html",
+          "?search_keyword=",
+          "{mmtv_url}/zh/searchform_search/all/index.html",
+          "{search_url}?search_keyword={search_keyword}&search_type=searchall&op=search"
+        ]
+      },
+      "raw_urls": [
+        "https://7mm002.com/zh/amateur_content/107108/content.html",
+        "https://7mmtv.tv",
+        "https://www.7mmtv.sx"
+      ]
+    },
+    {
+      "website": "airav",
+      "enum_name": "AIRAV",
+      "module_name": "airav",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\airav.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\airav.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://cn.airav.wiki",
+        "https://jp.airav.wiki",
+        "https://www.airav.wiki"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://cn.airav.wiki",
+          "https://jp.airav.wiki",
+          "https://www.airav.wiki"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/?search="
+        ]
+      },
+      "raw_urls": [
+        "https://cn.airav.wiki",
+        "https://jp.airav.wiki",
+        "https://www.airav.wiki"
+      ]
+    },
+    {
+      "website": "airav_cc",
+      "enum_name": "AIRAV_CC",
+      "module_name": "airav_cc",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\airav_cc.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\airav_cc.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://airav.io"
+      ],
+      "domains": [
+        "https://airav.io"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://airav.io"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/search_result?kw=",
+          "/search_result?kw={number}"
+        ]
+      },
+      "raw_urls": [
+        "https://airav.io"
+      ]
+    },
+    {
+      "website": "avsex",
+      "enum_name": "AVSEX",
+      "module_name": "avsex",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\avsex.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\avsex.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://gg5.co"
+      ],
+      "domains": [
+        "https://9sex.tv",
+        "https://gg5.co"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://9sex.tv/cn",
+          "https://gg5.co"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/tw/search?query="
+        ]
+      },
+      "raw_urls": [
+        "https://9sex.tv/cn",
+        "https://gg5.co"
+      ]
+    },
+    {
+      "website": "avsox",
+      "enum_name": "AVSOX",
+      "module_name": "avsox",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\avsox.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\avsox.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://avsox.click",
+        "https://tellme.pw"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://avsox.click",
+          "https://tellme.pw/avsox"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/cn/search/",
+          "{avsox_url}/cn/search/{number}"
+        ]
+      },
+      "raw_urls": [
+        "https://avsox.click",
+        "https://tellme.pw/avsox"
+      ]
+    },
+    {
+      "website": "cableav",
+      "enum_name": "CABLEAV",
+      "module_name": "cableav",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\cableav.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\cableav.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://cableav.tv"
+      ],
+      "domains": [
+        "https://cableav.tv"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://cableav.tv"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://cableav.tv"
+      ]
+    },
+    {
+      "website": "cnmdb",
+      "enum_name": "CNMDB",
+      "module_name": "cnmdb",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\cnmdb.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\cnmdb.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://cnmdb.net"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://cnmdb.net/"
+        ],
+        "search": [
+          "https://cnmdb.net/s0?q=",
+          "https://cnmdb.net/s0?q={each}"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://cnmdb.net/",
+        "https://cnmdb.net/s0?q=",
+        "https://cnmdb.net/s0?q={each}"
+      ]
+    },
+    {
+      "website": "dahlia",
+      "enum_name": "DAHLIA",
+      "module_name": "dahlia",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\dahlia.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\dahlia.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://dahlia-av.jp"
+      ],
+      "categorized_urls": {
+        "detail": [
+          "https://dahlia-av.jp/works/",
+          "https://dahlia-av.jp/works/{number_lo.replace('-', '')}/"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://dahlia-av.jp/works/",
+        "https://dahlia-av.jp/works/{number_lo.replace('-', '')}/"
+      ]
+    },
+    {
+      "website": "dmm",
+      "enum_name": "DMM",
+      "module_name": "dmm_new",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\dmm_new\\__init__.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\dmm_new\\__init__.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://api.tv.dmm.co.jp",
+        "https://api.tv.dmm.com",
+        "https://awsimgsrc.dmm.co.jp",
+        "https://www.dmm.co.jp",
+        "https://www.dmm.com"
+      ],
+      "categorized_urls": {
+        "api": [
+          "https://api.tv.dmm.co.jp/graphql",
+          "https://api.tv.dmm.com/graphql"
+        ],
+        "detail": [
+          "https://awsimgsrc.dmm.co.jp/pics_dig/digital/video/",
+          "https://awsimgsrc.dmm.co.jp/pics_dig/digital/video/{ctx.number_00}/{ctx.number_00}pl.jpg",
+          "https://awsimgsrc.dmm.co.jp/pics_dig/digital/video/{ctx.number_no_00}/{ctx.number_no_00}pl.jpg"
+        ],
+        "search": [
+          "https://www.dmm.co.jp/search/=/searchstr=",
+          "https://www.dmm.co.jp/search/=/searchstr={number_00}/sort=ranking/",
+          "https://www.dmm.co.jp/search/=/searchstr={number_no_00}/sort=ranking/",
+          "https://www.dmm.com/search/=/searchstr=",
+          "https://www.dmm.com/search/=/searchstr={number_no_00}/sort=ranking/"
+        ]
+      },
+      "dynamic_templates": {
+        "detail": [
+          "hlsvideo",
+          "litevideo"
+        ],
+        "search": [
+          " search_url="
+        ]
+      },
+      "raw_urls": [
+        "https://api.tv.dmm.co.jp/graphql",
+        "https://api.tv.dmm.com/graphql",
+        "https://awsimgsrc.dmm.co.jp/pics_dig/digital/video/",
+        "https://awsimgsrc.dmm.co.jp/pics_dig/digital/video/{ctx.number_00}/{ctx.number_00}pl.jpg",
+        "https://awsimgsrc.dmm.co.jp/pics_dig/digital/video/{ctx.number_no_00}/{ctx.number_no_00}pl.jpg",
+        "https://www.dmm.co.jp/search/=/searchstr=",
+        "https://www.dmm.co.jp/search/=/searchstr={number_00}/sort=ranking/",
+        "https://www.dmm.co.jp/search/=/searchstr={number_no_00}/sort=ranking/",
+        "https://www.dmm.com/search/=/searchstr=",
+        "https://www.dmm.com/search/=/searchstr={number_no_00}/sort=ranking/"
+      ]
+    },
+    {
+      "website": "faleno",
+      "enum_name": "FALENO",
+      "module_name": "faleno",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\faleno.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\faleno.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://faleno.jp",
+        "https://falenogroup.com"
+      ],
+      "categorized_urls": {
+        "detail": [
+          "https://faleno.jp/top/works/",
+          "https://faleno.jp/top/works/{number_lo_noline}/",
+          "https://faleno.jp/top/works/{number_lo}/",
+          "https://falenogroup.com/works/",
+          "https://falenogroup.com/works/{number_lo_noline}/",
+          "https://falenogroup.com/works/{number_lo}/"
+        ],
+        "other": [
+          "https://faleno.jp/top/?s=",
+          "https://faleno.jp/top/?s={number_lo_space}",
+          "https://falenogroup.com/top/?s=",
+          "https://falenogroup.com/top/?s={number_lo_space}"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://faleno.jp/top/?s=",
+        "https://faleno.jp/top/?s={number_lo_space}",
+        "https://faleno.jp/top/works/",
+        "https://faleno.jp/top/works/{number_lo_noline}/",
+        "https://faleno.jp/top/works/{number_lo}/",
+        "https://falenogroup.com/top/?s=",
+        "https://falenogroup.com/top/?s={number_lo_space}",
+        "https://falenogroup.com/works/",
+        "https://falenogroup.com/works/{number_lo_noline}/",
+        "https://falenogroup.com/works/{number_lo}/"
+      ]
+    },
+    {
+      "website": "fantastica",
+      "enum_name": "FANTASTICA",
+      "module_name": "fantastica",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\fantastica.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\fantastica.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "http://fantastica-vr.com",
+        "https://assets.fantastica-vr.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "http://fantastica-vr.com",
+          "https://assets.fantastica-vr.com/assets/common/img/dummy_large_white.jpg",
+          "https://assets.fantastica-vr.com/assets/common/img/dummy_white.jpg"
+        ],
+        "search": [
+          "http://fantastica-vr.com/items/search?q=",
+          "http://fantastica-vr.com/items/search?q={number}"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "http://fantastica-vr.com",
+        "http://fantastica-vr.com/items/search?q=",
+        "http://fantastica-vr.com/items/search?q={number}",
+        "https://assets.fantastica-vr.com/assets/common/img/dummy_large_white.jpg",
+        "https://assets.fantastica-vr.com/assets/common/img/dummy_white.jpg"
+      ]
+    },
+    {
+      "website": "fc2",
+      "enum_name": "FC2",
+      "module_name": "fc2",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://adult.contents.fc2.com"
+      ],
+      "categorized_urls": {
+        "detail": [
+          "https://adult.contents.fc2.com/article/",
+          "https://adult.contents.fc2.com/article/{number}/"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://adult.contents.fc2.com/article/",
+        "https://adult.contents.fc2.com/article/{number}/"
+      ]
+    },
+    {
+      "website": "fc2club",
+      "enum_name": "FC2CLUB",
+      "module_name": "fc2club",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2club.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2club.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://fc2club.top"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://fc2club.top/html/FC2-",
+          "https://fc2club.top/html/FC2-{number}.html",
+          "https://fc2club.top/uploadfile"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://fc2club.top/html/FC2-",
+        "https://fc2club.top/html/FC2-{number}.html",
+        "https://fc2club.top/uploadfile"
+      ]
+    },
+    {
+      "website": "fc2hub",
+      "enum_name": "FC2HUB",
+      "module_name": "fc2hub",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2hub.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2hub.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://javten.com"
+      ],
+      "domains": [
+        "https://javten.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://javten.com"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/search?kw="
+        ]
+      },
+      "raw_urls": [
+        "https://javten.com"
+      ]
+    },
+    {
+      "website": "fc2ppvdb",
+      "enum_name": "FC2PPVDB",
+      "module_name": "fc2ppvdb",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2ppvdb.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\fc2ppvdb.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://fc2ppvdb.com"
+      ],
+      "categorized_urls": {
+        "detail": [
+          "https://fc2ppvdb.com/articles/",
+          "https://fc2ppvdb.com/articles/{number}"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://fc2ppvdb.com/articles/",
+        "https://fc2ppvdb.com/articles/{number}"
+      ]
+    },
+    {
+      "website": "freejavbt",
+      "enum_name": "FREEJAVBT",
+      "module_name": "freejavbt",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\freejavbt.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\freejavbt.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://freejavbt.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://freejavbt.com/",
+          "https://freejavbt.com/{number}"
+        ]
+      },
+      "dynamic_templates": {
+        "media": [
+          "#preview-video"
+        ]
+      },
+      "raw_urls": [
+        "https://freejavbt.com/",
+        "https://freejavbt.com/{number}"
+      ]
+    },
+    {
+      "website": "getchu",
+      "enum_name": "GETCHU",
+      "module_name": "getchu",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\getchu.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\getchu.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "http://www.getchu.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "http://www.getchu.com",
+          "http://www.getchu.com/"
+        ],
+        "search": [
+          "http://www.getchu.com/php/search.phtml?genre=all&search_keyword=",
+          "http://www.getchu.com/php/search.phtml?genre=all&search_keyword={keyword2}&gc=gc"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "http://www.getchu.com",
+        "http://www.getchu.com/",
+        "http://www.getchu.com/php/search.phtml?genre=all&search_keyword=",
+        "http://www.getchu.com/php/search.phtml?genre=all&search_keyword={keyword2}&gc=gc"
+      ]
+    },
+    {
+      "website": "getchu_dmm",
+      "enum_name": "GETCHU_DMM",
+      "module_name": "getchu_dmm",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\getchu_dmm.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\getchu_dmm.py",
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\getchu.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "http://www.getchu.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "http://www.getchu.com",
+          "http://www.getchu.com/"
+        ],
+        "search": [
+          "http://www.getchu.com/php/search.phtml?genre=all&search_keyword=",
+          "http://www.getchu.com/php/search.phtml?genre=all&search_keyword={keyword2}&gc=gc"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "http://www.getchu.com",
+        "http://www.getchu.com/",
+        "http://www.getchu.com/php/search.phtml?genre=all&search_keyword=",
+        "http://www.getchu.com/php/search.phtml?genre=all&search_keyword={keyword2}&gc=gc"
+      ]
+    },
+    {
+      "website": "giga",
+      "enum_name": "GIGA",
+      "module_name": "giga",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\giga.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\giga.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://www.giga-web.jp"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://www.giga-web.jp",
+          "https://www.giga-web.jp/cookie_set.php"
+        ],
+        "search": [
+          "https://www.giga-web.jp/search/?keyword=",
+          "https://www.giga-web.jp/search/?keyword={number}"
+        ]
+      },
+      "dynamic_templates": {
+        "detail": [
+          "index.php?product_id="
+        ],
+        "media": [
+          "player_sample.php?id="
+        ]
+      },
+      "raw_urls": [
+        "https://www.giga-web.jp",
+        "https://www.giga-web.jp/cookie_set.php",
+        "https://www.giga-web.jp/search/?keyword=",
+        "https://www.giga-web.jp/search/?keyword={number}"
+      ]
+    },
+    {
+      "website": "hdouban",
+      "enum_name": "HDOUBAN",
+      "module_name": "hdouban",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\hdouban.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\hdouban.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://ormtgu.com"
+      ],
+      "domains": [
+        "https://api.6dccbca.com",
+        "https://ormtgu.com"
+      ],
+      "categorized_urls": {
+        "api": [
+          "https://api.6dccbca.com/api/movie/detail",
+          "https://api.6dccbca.com/api/search?ty=movie&search=",
+          "https://api.6dccbca.com/api/search?ty=movie&search={number}&page=1&pageSize=12"
+        ],
+        "other": [
+          "https://ormtgu.com"
+        ]
+      },
+      "dynamic_templates": {
+        "detail": [
+          "/moviedetail/",
+          "{hdouban_url}/moviedetail/{each_id}"
+        ]
+      },
+      "raw_urls": [
+        "https://api.6dccbca.com/api/movie/detail",
+        "https://api.6dccbca.com/api/search?ty=movie&search=",
+        "https://api.6dccbca.com/api/search?ty=movie&search={number}&page=1&pageSize=12",
+        "https://ormtgu.com"
+      ]
+    },
+    {
+      "website": "hscangku",
+      "enum_name": "HSCANGKU",
+      "module_name": "hscangku",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\hscangku.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\hscangku.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "http://hsck.net"
+      ],
+      "domains": [
+        "http://hsck.net"
+      ],
+      "categorized_urls": {
+        "other": [
+          "http://hsck.net"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/vodsearch/-------------.html?wd=",
+          "{hscangku_url}/vodsearch/-------------.html?wd={each}&submit="
+        ]
+      },
+      "raw_urls": [
+        "http://hsck.net"
+      ]
+    },
+    {
+      "website": "iqqtv",
+      "enum_name": "IQQTV",
+      "module_name": "iqqtv_new",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\iqqtv_new.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\iqqtv_new.py",
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\iqqtv.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://iqq5.xyz"
+      ],
+      "domains": [
+        "https://iqq5.xyz"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://iqq5.xyz"
+        ]
+      },
+      "dynamic_templates": {
+        "other": [
+          "iqqtv.cloud/jp/player",
+          "iqqtv.cloud/player",
+          "player"
+        ],
+        "search": [
+          "search.php?kw="
+        ]
+      },
+      "raw_urls": [
+        "https://iqq5.xyz"
+      ]
+    },
+    {
+      "website": "jav321",
+      "enum_name": "JAV321",
+      "module_name": "jav321",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\jav321.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\jav321.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://www.jav321.com"
+      ],
+      "categorized_urls": {
+        "search": [
+          "https://www.jav321.com/search"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://www.jav321.com/search"
+      ]
+    },
+    {
+      "website": "javbus",
+      "enum_name": "JAVBUS",
+      "module_name": "javbus",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\javbus.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\javbus.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://www.javbus.com"
+      ],
+      "domains": [
+        "https://www.javbus.com",
+        "https://www.javbus.hair"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://www.javbus.com"
+        ],
+        "search": [
+          "https://www.javbus.hair/search/"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/search/",
+          "/uncensored/search/"
+        ]
+      },
+      "raw_urls": [
+        "https://www.javbus.com",
+        "https://www.javbus.hair/search/"
+      ]
+    },
+    {
+      "website": "javday",
+      "enum_name": "JAVDAY",
+      "module_name": "javday",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\javday.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\javday.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://javday.tv"
+      ],
+      "domains": [
+        "https://javday.tv"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://javday.tv"
+        ]
+      },
+      "dynamic_templates": {
+        "detail": [
+          "/videos/",
+          "/videos/{number}/"
+        ]
+      },
+      "raw_urls": [
+        "https://javday.tv"
+      ]
+    },
+    {
+      "website": "javdb",
+      "enum_name": "JAVDB",
+      "module_name": "javdb_new",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\javdb_new.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\javdb_new.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://javdb.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://javdb.com"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/search?q=",
+          "{self.base_url}/search?q={number}&locale=zh"
+        ]
+      },
+      "raw_urls": [
+        "https://javdb.com"
+      ]
+    },
+    {
+      "website": "javlibrary",
+      "enum_name": "JAVLIBRARY",
+      "module_name": "javlibrary_new",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\javlibrary_new.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\javlibrary_new.py",
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\javlibrary.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://www.javlibrary.com"
+      ],
+      "domains": [
+        "https://www.javlibrary.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://www.javlibrary.com"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/cn/vl_searchbyid.php?keyword=",
+          "/ja/vl_searchbyid.php?keyword=",
+          "/tw/vl_searchbyid.php?keyword="
+        ]
+      },
+      "raw_urls": [
+        "https://www.javlibrary.com"
+      ]
+    },
+    {
+      "website": "kin8",
+      "enum_name": "KIN8",
+      "module_name": "kin8",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\kin8.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\kin8.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://smovie.kin8tengoku.com",
+        "https://www.kin8tengoku.com"
+      ],
+      "categorized_urls": {
+        "detail": [
+          "https://www.kin8tengoku.com/moviepages/",
+          "https://www.kin8tengoku.com/moviepages/1232/index.html",
+          "https://www.kin8tengoku.com/moviepages/{key}/index.html"
+        ],
+        "media": [
+          "https://smovie.kin8tengoku.com/sample_mobile_template/",
+          "https://smovie.kin8tengoku.com/sample_mobile_template/{key}/hls-1800k.mp4"
+        ],
+        "other": [
+          "https://www.kin8tengoku.com/",
+          "https://www.kin8tengoku.com/{key}/pht/1.jpg"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://smovie.kin8tengoku.com/sample_mobile_template/",
+        "https://smovie.kin8tengoku.com/sample_mobile_template/{key}/hls-1800k.mp4",
+        "https://www.kin8tengoku.com/",
+        "https://www.kin8tengoku.com/moviepages/",
+        "https://www.kin8tengoku.com/moviepages/1232/index.html",
+        "https://www.kin8tengoku.com/moviepages/{key}/index.html",
+        "https://www.kin8tengoku.com/{key}/pht/1.jpg"
+      ]
+    },
+    {
+      "website": "love6",
+      "enum_name": "LOVE6",
+      "module_name": "love6",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\love6.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\love6.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://love6.tv",
+        "https://lulubar.net"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://love6.tv",
+          "https://lulubar.net"
+        ],
+        "search": [
+          "https://love6.tv/search/all/?search_text=",
+          "https://love6.tv/search/all/?search_text={number}"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://love6.tv",
+        "https://love6.tv/search/all/?search_text=",
+        "https://love6.tv/search/all/?search_text={number}",
+        "https://lulubar.net"
+      ]
+    },
+    {
+      "website": "lulubar",
+      "enum_name": "LULUBAR",
+      "module_name": "lulubar",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\lulubar.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\lulubar.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://lulubar.co"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://lulubar.co",
+          "https://lulubar.co{cover}",
+          "https://lulubar.co{poster[0]}",
+          "https://lulubar.co{poster}"
+        ],
+        "search": [
+          "https://lulubar.co/video/bysearch?search=",
+          "https://lulubar.co/video/bysearch?search={number}&page=1"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://lulubar.co",
+        "https://lulubar.co/video/bysearch?search=",
+        "https://lulubar.co/video/bysearch?search={number}&page=1",
+        "https://lulubar.co{cover}",
+        "https://lulubar.co{poster[0]}",
+        "https://lulubar.co{poster}"
+      ]
+    },
+    {
+      "website": "madouqu",
+      "enum_name": "MADOUQU",
+      "module_name": "madouqu",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\madouqu.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\madouqu.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://madouqu.com"
+      ],
+      "domains": [
+        "https://madouqu.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://madouqu.com"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://madouqu.com"
+      ]
+    },
+    {
+      "website": "mdtv",
+      "enum_name": "MDTV",
+      "module_name": "mdtv",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\mdtv.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\mdtv.py"
+      ],
+      "customizable_base_url": true,
+      "default_base_urls": [
+        "https://www.mdpjzip.xyz"
+      ],
+      "domains": [
+        "https://www.mdpjzip.xyz"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://www.mdpjzip.xyz"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/index.php/vodsearch/-------------.html",
+          "{mdtv_url}/index.php/vodsearch/-------------.html"
+        ]
+      },
+      "raw_urls": [
+        "https://www.mdpjzip.xyz"
+      ]
+    },
+    {
+      "website": "mgstage",
+      "enum_name": "MGSTAGE",
+      "module_name": "mgstage",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\mgstage.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\mgstage.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://www.mgstage.com"
+      ],
+      "categorized_urls": {
+        "detail": [
+          "https://www.mgstage.com/product/product_detail/",
+          "https://www.mgstage.com/product/product_detail/300MIUM-382/",
+          "https://www.mgstage.com/product/product_detail/{number}/",
+          "https://www.mgstage.com/product/product_detail/{short_number}/"
+        ]
+      },
+      "dynamic_templates": {
+        "media": [
+          "/sampleplayer/sampleRespons.php"
+        ]
+      },
+      "raw_urls": [
+        "https://www.mgstage.com/product/product_detail/",
+        "https://www.mgstage.com/product/product_detail/300MIUM-382/",
+        "https://www.mgstage.com/product/product_detail/{number}/",
+        "https://www.mgstage.com/product/product_detail/{short_number}/"
+      ]
+    },
+    {
+      "website": "mywife",
+      "enum_name": "MYWIFE",
+      "module_name": "mywife",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\mywife.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\mywife.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://mywife.cc",
+        "https://mywife.jp",
+        "https://seesaawiki.jp"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://mywife.cc/teigaku/model/no/",
+          "https://mywife.cc/teigaku/model/no/{key}",
+          "https://mywife.jp/?s=",
+          "https://mywife.jp/?s={key}",
+          "https://seesaawiki.jp/av_neme/d/%C9%F1%A5%EF%A5%A4%A5%D5"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://mywife.cc/teigaku/model/no/",
+        "https://mywife.cc/teigaku/model/no/{key}",
+        "https://mywife.jp/?s=",
+        "https://mywife.jp/?s={key}",
+        "https://seesaawiki.jp/av_neme/d/%C9%F1%A5%EF%A5%A4%A5%D5"
+      ]
+    },
+    {
+      "website": "official",
+      "enum_name": "OFFICIAL",
+      "module_name": "official",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\official.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\official.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://www.prestige-av.com"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://www.prestige-av.com"
+        ]
+      },
+      "dynamic_templates": {
+        "search": [
+          "/search/list?keyword="
+        ]
+      },
+      "raw_urls": [
+        "https://www.prestige-av.com"
+      ]
+    },
+    {
+      "website": "prestige",
+      "enum_name": "PRESTIGE",
+      "module_name": "prestige",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\prestige.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\prestige.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://www.prestige-av.com"
+      ],
+      "categorized_urls": {
+        "api": [
+          "https://www.prestige-av.com/api/media/",
+          "https://www.prestige-av.com/api/product/",
+          "https://www.prestige-av.com/api/search?isEnabledQuery=true&searchText=",
+          "https://www.prestige-av.com/api/search?isEnabledQuery=true&searchText={number}&isEnableAggregation=false&release=false&reservation=false&soldOut=false&from=0&aggregationTermsSize=0&size=20"
+        ]
+      },
+      "dynamic_templates": {
+        "detail": [
+          "api/product",
+          "movie",
+          "productUuid"
+        ]
+      },
+      "raw_urls": [
+        "https://www.prestige-av.com/api/media/",
+        "https://www.prestige-av.com/api/product/",
+        "https://www.prestige-av.com/api/search?isEnabledQuery=true&searchText=",
+        "https://www.prestige-av.com/api/search?isEnabledQuery=true&searchText={number}&isEnableAggregation=false&release=false&reservation=false&soldOut=false&from=0&aggregationTermsSize=0&size=20"
+      ]
+    },
+    {
+      "website": "theporndb",
+      "enum_name": "THEPORNDB",
+      "module_name": "theporndb",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\theporndb.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\theporndb.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://api.theporndb.net"
+      ],
+      "categorized_urls": {
+        "api": [
+          "https://api.theporndb.net/scenes/",
+          "https://api.theporndb.net/scenes/hash/",
+          "https://api.theporndb.net/scenes/hash/{hash}",
+          "https://api.theporndb.net/scenes/{each['slug']}",
+          "https://api.theporndb.net/scenes/{slug}",
+          "https://api.theporndb.net/scenes?parse=",
+          "https://api.theporndb.net/scenes?parse={search_keyword}&per_page=100"
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://api.theporndb.net/scenes/",
+        "https://api.theporndb.net/scenes/hash/",
+        "https://api.theporndb.net/scenes/hash/{hash}",
+        "https://api.theporndb.net/scenes/{each['slug']}",
+        "https://api.theporndb.net/scenes/{slug}",
+        "https://api.theporndb.net/scenes?parse=",
+        "https://api.theporndb.net/scenes?parse={search_keyword}&per_page=100"
+      ]
+    },
+    {
+      "website": "xcity",
+      "enum_name": "XCITY",
+      "module_name": "xcity",
+      "file": "D:\\tools\\mdcx\\mdcx\\crawlers\\xcity.py",
+      "scanned_files": [
+        "D:\\tools\\mdcx\\mdcx\\crawlers\\xcity.py"
+      ],
+      "customizable_base_url": false,
+      "default_base_urls": [],
+      "domains": [
+        "https://faws.xcity.jp",
+        "https://xcity.jp"
+      ],
+      "categorized_urls": {
+        "other": [
+          "https://faws.xcity.jp/",
+          "https://xcity.jp"
+        ],
+        "search": [
+          "https://xcity.jp/result_published/?q="
+        ]
+      },
+      "dynamic_templates": {},
+      "raw_urls": [
+        "https://faws.xcity.jp/",
+        "https://xcity.jp",
+        "https://xcity.jp/result_published/?q="
+      ]
+    }
+  ],
+  "official_sites": [
+    {
+      "base_url": "https://attackers.net",
+      "prefixes": [
+        "atvr",
+        "rbk",
+        "rbd",
+        "same",
+        "shkd",
+        "atid",
+        "adn",
+        "atkd",
+        "jbd",
+        "sspd",
+        "atad",
+        "azsd"
+      ],
+      "prefix_count": 12
+    },
+    {
+      "base_url": "https://av-opera.jp",
+      "prefixes": [
+        "opvr",
+        "opbd",
+        "opud"
+      ],
+      "prefix_count": 3
+    },
+    {
+      "base_url": "https://befreebe.com",
+      "prefixes": [
+        "bf"
+      ],
+      "prefix_count": 1
+    },
+    {
+      "base_url": "https://bi-av.com",
+      "prefixes": [
+        "cjvr",
+        "cjod",
+        "bbi",
+        "bib",
+        "cjob",
+        "beb",
+        "bid",
+        "bist",
+        "bwb"
+      ],
+      "prefix_count": 9
+    },
+    {
+      "base_url": "https://bibian-av.com",
+      "prefixes": [
+        "bbvr",
+        "bban"
+      ],
+      "prefix_count": 2
+    },
+    {
+      "base_url": "https://dasdas.jp",
+      "prefixes": [
+        "dsvr",
+        "dass",
+        "dazd",
+        "dasd",
+        "pla"
+      ],
+      "prefix_count": 5
+    },
+    {
+      "base_url": "https://fitch-av.com",
+      "prefixes": [
+        "fcvr",
+        "jufe",
+        "jufd",
+        "jfb",
+        "juny",
+        "nyb",
+        "finh",
+        "gcf",
+        "nima"
+      ],
+      "prefix_count": 9
+    },
+    {
+      "base_url": "https://hajimekikaku.com",
+      "prefixes": [
+        "hjbb",
+        "hjmo",
+        "avgl"
+      ],
+      "prefix_count": 3
+    },
+    {
+      "base_url": "https://hhh-av.com",
+      "prefixes": [
+        "huntb",
+        "hunta",
+        "hunt",
+        "hunbl",
+        "royd",
+        "tysf"
+      ],
+      "prefix_count": 6
+    },
+    {
+      "base_url": "https://honnaka.jp",
+      "prefixes": [
+        "hnvr",
+        "hmn",
+        "hndb",
+        "hnd",
+        "krnd",
+        "hnky",
+        "hnjc",
+        "hnse"
+      ],
+      "prefix_count": 8
+    },
+    {
+      "base_url": "https://ideapocket.com",
+      "prefixes": [
+        "ipvr",
+        "ipx",
+        "ipz",
+        "iptd",
+        "ipsd",
+        "idbd",
+        "supd",
+        "ipit",
+        "and",
+        "hpd",
+        "tkipz",
+        "ipzz",
+        "cosd",
+        "anpd",
+        "dan",
+        "alad",
+        "kipx"
+      ],
+      "prefix_count": 17
+    },
+    {
+      "base_url": "https://kawaiikawaii.jp",
+      "prefixes": [
+        "kavr",
+        "cawd",
+        "kwbd",
+        "kawd",
+        "kwsr",
+        "kwsd",
+        "kane"
+      ],
+      "prefix_count": 7
+    },
+    {
+      "base_url": "https://kirakira-av.com",
+      "prefixes": [
+        "kivr",
+        "blk",
+        "kibd",
+        "kifd",
+        "kird",
+        "kisd",
+        "set"
+      ],
+      "prefix_count": 7
+    },
+    {
+      "base_url": "https://miman.jp",
+      "prefixes": [
+        "mmvr",
+        "mmnd",
+        "mmxd",
+        "aom"
+      ],
+      "prefix_count": 4
+    },
+    {
+      "base_url": "https://mko-labo.net",
+      "prefixes": [
+        "mvr",
+        "mism",
+        "emlb"
+      ],
+      "prefix_count": 3
+    },
+    {
+      "base_url": "https://moodyz.com",
+      "prefixes": [
+        "mdvr",
+        "midv",
+        "mide",
+        "midd",
+        "mibd",
+        "mimk",
+        "miid",
+        "migd",
+        "mifd",
+        "miae",
+        "miad",
+        "miaa",
+        "mdl",
+        "mdj",
+        "mdi",
+        "mdg",
+        "mdf",
+        "mde",
+        "mdld",
+        "mded",
+        "mizd",
+        "mird",
+        "mdjd",
+        "rmid",
+        "mdid",
+        "mdmd",
+        "mimu",
+        "mdpd",
+        "mivd",
+        "mdud",
+        "mdgd",
+        "mdvd",
+        "mias",
+        "miqd",
+        "mint",
+        "rmpd",
+        "mdrd",
+        "tkmide",
+        "tkmidd",
+        "kmide",
+        "tkmigd",
+        "mdfd",
+        "rmwd",
+        "miab"
+      ],
+      "prefix_count": 44
+    },
+    {
+      "base_url": "https://muku.tv",
+      "prefixes": [
+        "mucd",
+        "mudr",
+        "mukd",
+        "smcd",
+        "mukc"
+      ],
+      "prefix_count": 5
+    },
+    {
+      "base_url": "https://mvg.jp",
+      "prefixes": [
+        "mvsd",
+        "mvbd"
+      ],
+      "prefix_count": 2
+    },
+    {
+      "base_url": "https://nanpa-japan.jp",
+      "prefixes": [
+        "njvr",
+        "nnpj",
+        "npjb"
+      ],
+      "prefix_count": 3
+    },
+    {
+      "base_url": "https://oppai-av.com",
+      "prefixes": [
+        "ppvr",
+        "pppe",
+        "ppbd",
+        "pppd",
+        "ppsd",
+        "ppfd"
+      ],
+      "prefix_count": 6
+    },
+    {
+      "base_url": "https://premium-beauty.com",
+      "prefixes": [
+        "prvr",
+        "pgd",
+        "pred",
+        "pbd",
+        "pjd",
+        "prtd",
+        "pxd",
+        "pid",
+        "ptv"
+      ],
+      "prefix_count": 9
+    },
+    {
+      "base_url": "https://rookie-av.jp",
+      "prefixes": [
+        "rvr",
+        "rbb",
+        "rki"
+      ],
+      "prefix_count": 3
+    },
+    {
+      "base_url": "https://s1s1s1.com",
+      "prefixes": [
+        "sivr",
+        "ssis",
+        "ssni",
+        "snis",
+        "soe",
+        "oned",
+        "one",
+        "onsd",
+        "ofje",
+        "sps",
+        "tksoe"
+      ],
+      "prefix_count": 11
+    },
+    {
+      "base_url": "https://tameikegoro.jp",
+      "prefixes": [
+        "mevr",
+        "meyd",
+        "mbyd",
+        "mdyd",
+        "mnyd"
+      ],
+      "prefix_count": 5
+    },
+    {
+      "base_url": "https://to-satsu.com",
+      "prefixes": [
+        "clvr",
+        "stol",
+        "club"
+      ],
+      "prefix_count": 3
+    },
+    {
+      "base_url": "https://v-av.com",
+      "prefixes": [
+        "vvvd",
+        "vicd",
+        "vizd",
+        "vspd"
+      ],
+      "prefix_count": 4
+    },
+    {
+      "base_url": "https://www.av-e-body.com",
+      "prefixes": [
+        "ebvr",
+        "ebod",
+        "mkck",
+        "eyan"
+      ],
+      "prefix_count": 4
+    },
+    {
+      "base_url": "https://www.madonna-av.com",
+      "prefixes": [
+        "juvr",
+        "jusd",
+        "juq",
+        "juy",
+        "jux",
+        "jul",
+        "juk",
+        "juc",
+        "jukd",
+        "jusd",
+        "oba",
+        "jufd",
+        "roeb",
+        "roe",
+        "ure",
+        "mdon",
+        "jfb",
+        "obe",
+        "jums"
+      ],
+      "prefix_count": 19
+    },
+    {
+      "base_url": "https://www.prestige-av.com",
+      "prefixes": [
+        "abp",
+        "mbm",
+        "ezd",
+        "docp",
+        "onez",
+        "yrh",
+        "abw",
+        "abs",
+        "chn",
+        "mgt",
+        "tre",
+        "edd",
+        "ult",
+        "cmi",
+        "mbd",
+        "dnw",
+        "sga",
+        "rdd",
+        "dcx",
+        "evo",
+        "rdt",
+        "ppt",
+        "gets",
+        "sim",
+        "kil",
+        "tus",
+        "dtt",
+        "gnab",
+        "man",
+        "mas",
+        "tbl",
+        "rtp",
+        "ctd",
+        "fiv",
+        "dic",
+        "esk",
+        "kbi",
+        "tem",
+        "ama",
+        "kfne",
+        "trd",
+        "har",
+        "yrz",
+        "srs",
+        "mzq",
+        "zzr",
+        "gzap",
+        "tgav",
+        "rix",
+        "aka",
+        "bgn",
+        "lxv",
+        "afs",
+        "goal",
+        "giro",
+        "cpde",
+        "nmp",
+        "mct",
+        "abc",
+        "inu",
+        "shl",
+        "mbms",
+        "pxh",
+        "nrs",
+        "ftn",
+        "prdvr",
+        "fst",
+        "blo",
+        "shs",
+        "kum",
+        "gsx",
+        "ndx",
+        "atd",
+        "dld",
+        "kbh",
+        "bcv",
+        "raw",
+        "soud",
+        "job",
+        "chs",
+        "yok",
+        "bsd",
+        "fsb",
+        "nnn",
+        "hyk",
+        "sor",
+        "hsp",
+        "jbs",
+        "xnd",
+        "mei",
+        "day",
+        "mmy",
+        "kzd",
+        "jan",
+        "gyan",
+        "tdt",
+        "tok",
+        "dms",
+        "fnd",
+        "cdc",
+        "jcn",
+        "pvrbst",
+        "sdvr",
+        "docvr",
+        "fcp",
+        "abf"
+      ],
+      "prefix_count": 106
+    },
+    {
+      "base_url": "https://www.wanz-factory.com",
+      "prefixes": [
+        "wavr",
+        "waaa",
+        "bmw",
+        "wanz"
+      ],
+      "prefix_count": 4
+    }
+  ],
+  "summary": {
+    "crawler_site_count": 38,
+    "official_site_count": 30,
+    "official_prefix_count": 324
+  }
+}
