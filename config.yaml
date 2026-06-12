@@ -1,0 +1,28 @@
+# Source and output directories (required)
+source_dir: "W:\\P\\new"
+output_dir: "F:\\P\\link"
+
+# Provider priority — first has highest priority
+provider_order:
+  - javdb
+  - javbus
+
+# Network
+timeout: 20
+retries: 2        # number of retries after the first attempt (total = retries + 1)
+delay: 0.5        # seconds between requests (anti-rate-limit)
+proxy_url: null   # e.g. "socks5://127.0.0.1:1080" or "http://proxy:8080"
+user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+
+# Output
+media_action: copy  # copy or move
+download_images: true
+download_trailer: false
+write_metadata_json: true
+
+# Incremental
+skip_processed: true
+
+# Debug
+max_items: null
+stop_on_error: false

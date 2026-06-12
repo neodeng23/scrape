@@ -1,0 +1,17 @@
+# Scraping source site configurations.
+# Each provider reads its config (base_url, URL templates) from this file.
+# To add a new provider: create provider_xxx.py, then add an entry here.
+
+javdb:
+  base_url: "https://javdb.com"
+  search_url: "/search?q={code}&locale=en"
+  locale: "en"
+
+javbus:
+  base_url: "https://www.javbus.com"
+  search_url: "/search/{code}?type=1"
+  direct_url: "/{code}"
+  # JavBus requires age verification quiz (not bypassable programmatically).
+  # Export cookies from your browser after passing the quiz, paste here.
+  # Example: "PHPSESSID=abc123; existmag=mag; age=verified"
+  cookies: ""

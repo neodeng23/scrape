@@ -1,2 +1,0 @@
-beautifulsoup4==4.13.4
-httpx[socks]>=0.28.1

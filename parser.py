@@ -1,42 +1,27 @@
+"""Extract media codes (番号) from video filenames."""
 from __future__ import annotations
 
 import re
 import unicodedata
 from pathlib import Path
 
-
 BRACKETED_TEXT_RE = re.compile(r"\[[^\]]*]|\([^)]*\)|\{[^}]*}")
 CD_RE = re.compile(r"(?<![A-Z0-9])(CD|DISC|PART|PT)[-_. ]?\d{1,2}(?![A-Z0-9])")
 DATE_RE = re.compile(r"\b20\d{2}[-_. ]\d{1,2}[-_. ]\d{1,2}\b")
 WESTERN_DATE_RE = re.compile(r"\b([A-Z0-9-]{2,})[-_. ](\d{2}[.-]\d{2}[.-]\d{2})\b")
 GENERAL_HYPHEN_RE = re.compile(r"\b([A-Z]{2,10})[-_ ]?(\d{2,6}[A-Z]?)\b")
-# Handles cases like "259LUXU-1886" where digits precede the letter prefix.
 LEADING_DIGITS_HYPHEN_RE = re.compile(r"\b(\d{2,6})([A-Z]{2,10})[-_ ]?(\d{2,6}[A-Z]?)\b")
 COMPACT_RE = re.compile(r"\b([A-Z]{2,10})(\d{3,6}[A-Z]?)\b")
-PREFIXED_DATE_CODE_RE = re.compile(r"\b(CARIB|CARIBBEANCOM|1PONDO|10MU|PACO)-?(\d{6})[-_ ]?(\d{2,4})\b")
+PREFIXED_DATE_CODE_RE = re.compile(
+    r"\b(CARIB|CARIBBEANCOM|1PONDO|10MU|PACO)-?(\d{6})[-_ ]?(\d{2,4})\b"
+)
 NUMERIC_HYPHEN_RE = re.compile(r"\b(\d{6})[-_](\d{2,4})\b")
 
 NOISE_TOKENS = {
-    "4K",
-    "8K",
-    "FHD",
-    "UHD",
-    "HD",
-    "HEVC",
-    "X264",
-    "X265",
-    "H264",
-    "H265",
-    "AAC",
-    "HDR",
-    "DVDRIP",
-    "BLURAY",
-    "WEB",
-    "SAMPLE",
-    "SUB",
-    "CHS",
-    "CHT",
-    "CNDUB",
+    "4K", "8K", "FHD", "UHD", "HD", "HEVC",
+    "X264", "X265", "H264", "H265", "AAC", "HDR",
+    "DVDRIP", "BLURAY", "WEB", "SAMPLE", "SUB",
+    "CHS", "CHT", "CNDUB",
 }
 PREFIX_BLACKLIST = NOISE_TOKENS | {"MP4", "MKV", "AVI", "MOV", "WMV", "ISO"}
 
@@ -65,7 +50,7 @@ def _normalize_general_code(prefix: str, digits: str) -> str | None:
         return None
     normalized_digits = digits.rstrip("-_ ")
     trimmed_digits = normalized_digits.rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    suffix = normalized_digits[len(trimmed_digits) :]
+    suffix = normalized_digits[len(trimmed_digits):]
     trimmed_digits = trimmed_digits.lstrip("0") or trimmed_digits or "0"
     return f"{prefix}-{trimmed_digits}{suffix}"
 
@@ -91,7 +76,11 @@ def extract_media_code(name: str) -> str | None:
 
     prefixed_date_code = PREFIXED_DATE_CODE_RE.search(normalized)
     if prefixed_date_code:
-        return f"{prefixed_date_code.group(1)}-{prefixed_date_code.group(2)}-{prefixed_date_code.group(3)}"
+        return (
+            f"{prefixed_date_code.group(1)}"
+            f"-{prefixed_date_code.group(2)}"
+            f"-{prefixed_date_code.group(3)}"
+        )
 
     caribbean = NUMERIC_HYPHEN_RE.search(normalized)
     if caribbean:
@@ -99,7 +88,6 @@ def extract_media_code(name: str) -> str | None:
 
     leading = LEADING_DIGITS_HYPHEN_RE.search(normalized)
     if leading:
-        # Skip the leading digit group; use (prefix, number) as code.
         return _normalize_general_code(leading.group(2), leading.group(3))
 
     general = GENERAL_HYPHEN_RE.search(normalized)
