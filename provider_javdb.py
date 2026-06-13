@@ -211,5 +211,10 @@ def _digits_only(value: str) -> str:
     return m.group(0) if m else ""
 
 
+def scrape_url(url: str, session, config: dict) -> Movie | None:
+    """Scrape metadata directly from a JavDB detail URL (bypass search)."""
+    return _parse_detail("", url, session, config)
+
+
 # Self-register
 providers.register("javdb", sys.modules[__name__])

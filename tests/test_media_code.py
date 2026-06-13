@@ -14,7 +14,7 @@ class MediaCodeTests(unittest.TestCase):
         self.assertEqual(extract_media_code("1pondo-240101_001.mp4"), "1PONDO-240101-001")
 
     def test_brackets_stripped(self) -> None:
-        self.assertEqual(extract_media_code("[44x.me]SSIS-001 HD.mp4"), "SSIS-1")
+        self.assertEqual(extract_media_code("[44x.me]SSIS-001 HD.mp4"), "SSIS-001")
 
     def test_compact_format(self) -> None:
         self.assertEqual(extract_media_code("ABP123.mp4"), "ABP-123")

@@ -51,8 +51,14 @@ def _normalize_general_code(prefix: str, digits: str) -> str | None:
     normalized_digits = digits.rstrip("-_ ")
     trimmed_digits = normalized_digits.rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     suffix = normalized_digits[len(trimmed_digits):]
-    trimmed_digits = trimmed_digits.lstrip("0") or trimmed_digits or "0"
-    return f"{prefix}-{trimmed_digits}{suffix}"
+    # Drop any zero-padding from the filename, then pad back to the JAV
+    # canonical 3-digit form. This way "SSNI00103" -> "SSNI-103" while a
+    # genuine 3-digit code like "SSIS-001" stays "SSIS-001". Both forms then
+    # match what the sites actually publish.
+    number = trimmed_digits.lstrip("0") or "0"
+    if len(number) < 3:
+        number = number.zfill(3)
+    return f"{prefix}-{number}{suffix}"
 
 
 def extract_media_code(name: str) -> str | None:

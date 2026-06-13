@@ -6,12 +6,24 @@ import time
 import types
 from pathlib import Path
 
-import httpx
+# Check if curl_cffi is available for Cloudflare bypass
+_USE_CURL_CFFI = False
+try:
+    from curl_cffi import requests
+    _USE_CURL_CFFI = True
+except ImportError:
+    import httpx
+
 import yaml
 
 from models import Movie
 
 logger = logging.getLogger("scrape")
+
+if _USE_CURL_CFFI:
+    logger.info("Using curl_cffi for Cloudflare bypass")
+else:
+    logger.info("Using httpx (install curl-cffi for Cloudflare bypass)")
 
 # ---------------------------------------------------------------------------
 # Sites configuration (sites.yaml)
@@ -26,8 +38,13 @@ def load_sites() -> dict:
         return _sites_cache
     path = Path(__file__).with_name("sites.yaml")
     if path.exists():
-        with open(path, encoding="utf-8") as f:
-            _sites_cache = yaml.safe_load(f) or {}
+        try:
+            # Use utf-8-sig to handle BOM if present (Windows Notepad issue)
+            with open(path, encoding="utf-8-sig") as f:
+                _sites_cache = yaml.safe_load(f) or {}
+        except (yaml.YAMLError, OSError) as e:
+            logger.warning("Failed to load sites.yaml: %s", e)
+            _sites_cache = {}
     else:
         _sites_cache = {}
     return _sites_cache
@@ -67,16 +84,28 @@ def get_enabled(config: dict) -> list[tuple[str, types.ModuleType]]:
 _last_request_time: float = 0.0
 
 
-def create_session(config: dict) -> httpx.Client:
-    kwargs: dict = {
-        "timeout": config.get("timeout", 20),
-        "follow_redirects": True,
-        "headers": {"User-Agent": config.get("user_agent", "")},
-    }
-    proxy = config.get("proxy_url")
-    if proxy:
-        kwargs["proxy"] = proxy
-    return httpx.Client(**kwargs)
+def create_session(config: dict):
+    """Create HTTP session. Returns curl_cffi Session if available, else httpx Client."""
+    if _USE_CURL_CFFI:
+        kwargs: dict = {
+            "impersonate": "chrome",
+            "timeout": config.get("timeout", 20),
+            "headers": {"User-Agent": config.get("user_agent", "")},
+        }
+        proxy = config.get("proxy_url")
+        if proxy:
+            kwargs["proxies"] = {"http": proxy, "https": proxy}
+        return requests.Session(**kwargs)
+    else:
+        kwargs: dict = {
+            "timeout": config.get("timeout", 20),
+            "follow_redirects": True,
+            "headers": {"User-Agent": config.get("user_agent", "")},
+        }
+        proxy = config.get("proxy_url")
+        if proxy:
+            kwargs["proxy"] = proxy
+        return httpx.Client(**kwargs)
 
 
 def fetch(session: httpx.Client, url: str, config: dict) -> str:
@@ -106,15 +135,39 @@ def fetch(session: httpx.Client, url: str, config: dict) -> str:
     raise last_error or RuntimeError(f"All retries exhausted for: {url}")
 
 
-def download(session: httpx.Client, url: str, dest: Path) -> Path:
-    """Stream-download a file."""
+def download(session, url: str, dest: Path, timeout: int = 60) -> Path:
+    """Stream-download a file. Works with both curl_cffi and httpx."""
     dest.parent.mkdir(parents=True, exist_ok=True)
-    with session.stream("GET", url) as resp:
-        resp.raise_for_status()
-        with dest.open("wb") as f:
-            for chunk in resp.iter_bytes():
-                f.write(chunk)
-    return dest
+    # Clean up any partial file from previous attempt
+    if dest.exists():
+        dest.unlink()
+
+    try:
+        if _USE_CURL_CFFI:
+            # curl_cffi doesn't have stream(), use iterate=True
+            # Set longer timeout for downloads (default 60s)
+            resp = session.get(url, stream=True, timeout=timeout)
+            resp.raise_for_status()
+            with dest.open("wb") as f:
+                for chunk in resp.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+        else:
+            # httpx style
+            with session.stream("GET", url, timeout=timeout) as resp:
+                resp.raise_for_status()
+                with dest.open("wb") as f:
+                    for chunk in resp.iter_bytes():
+                        f.write(chunk)
+        return dest
+    except Exception:
+        # Clean up partial file on failure
+        if dest.exists():
+            try:
+                dest.unlink()
+            except OSError:
+                pass
+        raise
 
 
 # ---------------------------------------------------------------------------

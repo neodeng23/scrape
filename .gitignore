@@ -3,3 +3,10 @@ __pycache__/
 .pytest_cache/
 runtime/
 .scrape/
+
+# Local runtime artifacts and secrets (never commit)
+scrape_sources_config.json
+sites.local.yaml
+success_paths_*.txt
+failed_*.jsonl
+unmatched.txt
